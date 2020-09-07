@@ -90,7 +90,8 @@ ul {
 }
 @media only screen and (max-width: 770px) {
   .main {
-    height: 800px;
+    height: 700px;
+    padding-top: 90px;
   }
 }
 
@@ -107,6 +108,12 @@ ul {
     height: 1100px;
   }
 
+  .colorHeight {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
   .colorHeight {
     height: 400px;
   }

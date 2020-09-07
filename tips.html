@@ -54,7 +54,7 @@
     <header>
       <h1 class="text-center mt-4 fontmain">TIPS</h1>
     </header>
-    <section class="container container-sm">
+    <section class="container">
       <article class="row my-5">
         <div class="col-md-12 col-lg-9">
           <header>
@@ -76,11 +76,7 @@
           </p>
         </div>
         <div class="col-md-12 col-lg-3">
-          <img
-            src="imagenes/__MG_20200613_0002-Pano-1.jpg"
-            class="img-fluid"
-            alt="..."
-          />
+          <img src="imagenes/09_DO_CL.jpg" class="img-fluid" alt="..." />
         </div>
       </article>
       <article class="row my-5">
@@ -110,174 +106,183 @@
           />
         </div>
       </article>
-      <article class="row my-5">
-        <div class="col-12">
-          <table class="table table-dark">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Obra</th>
-                <th scope="col">Autor</th>
-                <th scope="col">Fuente</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Casa Home^Dome</td>
-                <td>Idoia otegui_arquitectura</td>
-                <td>
-                  <a
-                    href="https://www.plataformaarquitectura.cl/cl/946599/casa-home-dome-idoia-otegui-arquitectura?ad_source=search&ad_medium=search_result_projects"
-                    target="_blank"
-                    >Plataforma Aquitectura</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Apartamento DÔ</td>
-                <td>flipê arquitetura</td>
-                <td>
-                  <a
-                    href="https://www.plataformaarquitectura.cl/cl/946989/apartamento-do-flipe-arquitetura?ad_source=search&ad_medium=search_result_projects"
-                    target="_blank"
-                    >Plataforma Aquitectura</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Reforma FG</td>
-                <td>Manzoniterra Arquitectos</td>
-                <td>
-                  <a
-                    href="https://www.plataformaarquitectura.cl/cl/946528/reforma-fg-manzoniterra-arquitectos?ad_source=search&ad_medium=search_result_projects"
-                    target="_blank"
-                    >Plataforma Arquitectura</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
+      <div class="container table-responsive-sm">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Obra</th>
+              <th scope="col">Autor</th>
+              <th scope="col">Fuente</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Casa Home^Dome</td>
+              <td>Idoia otegui_arquitectura</td>
+              <td>
+                <a
+                  href="https://www.plataformaarquitectura.cl/cl/946599/casa-home-dome-idoia-otegui-arquitectura?ad_source=search&ad_medium=search_result_projects"
+                  target="_blank"
+                  >Plataforma Aquitectura</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Apartamento DÔ</td>
+              <td>flipê arquitetura</td>
+              <td>
+                <a
+                  href="https://www.plataformaarquitectura.cl/cl/946989/apartamento-do-flipe-arquitetura?ad_source=search&ad_medium=search_result_projects"
+                  target="_blank"
+                  >Plataforma Aquitectura</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Reforma FG</td>
+              <td>Manzoniterra Arquitectos</td>
+              <td>
+                <a
+                  href="https://www.plataformaarquitectura.cl/cl/946528/reforma-fg-manzoniterra-arquitectos?ad_source=search&ad_medium=search_result_projects"
+                  target="_blank"
+                  >Plataforma Arquitectura</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <article>
         <header>
           <h3 class="yellow text-center fontmain">Prueba tus conocimientos</h3>
         </header>
-        <div class="row justify-content-center my-3">
-          <h4 class="col-3 fontmain" id="start">Comienza</h4>
-          <button
-            type="button"
-            class="col-1 btn btn-dark"
-            id="b-ok"
-            onclick="play()"
-          >
-            OK
-          </button>
+        <div class="container">
+          <div class="row justify-content-center my-3">
+            <div class="col-5 col-sm-5 col-lg-3">
+              <h4 id="start">Comienza</h4>
+            </div>
+            <div class="col-3 col-sm-4 col-lg-1">
+              <button
+                class="btn btn-dark"
+                type="button"
+                id="b-ok"
+                onclick="play()"
+              >
+                OK
+              </button>
+            </div>
+          </div>
         </div>
         <h4 class="d-none fontmain" id="question">
           ¿Que color conviene en espacios pequeños?
         </h4>
         <div class="row justify-content-center my-3 d-none" id="again">
-          <h4 class="col-sm-4 col-lg-3 fontmain">¿Volver a jugar?</h4>
-          <button
-            type="button"
-            class="col-sm-2 col-lg-1 btn btn-dark"
-            id="b-ok"
-            onclick="play()"
+          <div class="col-5 col-sm-5 col-lg-3">
+            <h4 class="fontmain">¿Volver a jugar?</h4>
+          </div>
+          <div class="col-2 col-sm-4 col-lg-1">
+            <button
+              type="button"
+              class="btn btn-dark"
+              id="b-ok"
+              onclick="play()"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+        <div class="contianer">
+          <div
+            class="row justify-content-around my-5 d-none flex-row colorHeight"
+            id="option1"
           >
-            OK
-          </button>
-        </div>
-
-        <div
-          class="row justify-content-around my-5 d-none colorHeight"
-          id="option1"
-        >
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3">
-            <div class="color1 mb-2"></div>
-            <button
-              type="button"
-              class="btn btn-dark"
-              id="color1"
-              onclick="vista1()"
-            >
-              A
-            </button>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3">
+              <div class="color1 mb-2"></div>
+              <button
+                type="button"
+                class="btn btn-dark"
+                id="color1"
+                onclick="vista1()"
+              >
+                A
+              </button>
+            </div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3">
+              <div class="color2 mb-2"></div>
+              <button
+                type="button"
+                class="btn btn-dark"
+                id="color2"
+                onclick="vista1()"
+              >
+                B
+              </button>
+            </div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3" id="color3">
+              <div class="color3 mb-2"></div>
+              <button type="button" class="btn btn-dark" onclick="correcto()">
+                C
+              </button>
+            </div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3" id="color4">
+              <div class="color4 mb-2"></div>
+              <button type="button" class="btn btn-dark" onclick="vista1()">
+                D
+              </button>
+            </div>
           </div>
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3">
-            <div class="color2 mb-2"></div>
-            <button
-              type="button"
-              class="btn btn-dark"
-              id="color2"
-              onclick="vista1()"
-            >
-              B
-            </button>
-          </div>
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3" id="color3">
-            <div class="color3 mb-2"></div>
-            <button type="button" class="btn btn-dark" onclick="correcto()">
-              C
-            </button>
-          </div>
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3" id="color4">
-            <div class="color4 mb-2"></div>
-            <button type="button" class="btn btn-dark" onclick="vista1()">
-              D
-            </button>
-          </div>
-        </div>
-        <div
-          class="row justify-content-around my-5 d-none colorHeight"
-          id="option2"
-        >
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3">
-            <div class="color5 mb-2"></div>
-            <button
-              type="button"
-              class="btn btn-dark"
-              id="color5"
-              onclick="correcto()"
-            >
-              A
-            </button>
-          </div>
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3">
-            <div class="color6 mb-2"></div>
-            <button
-              type="button"
-              class="btn btn-dark"
-              id="color6"
-              onclick="vista1()"
-            >
-              B
-            </button>
-          </div>
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3">
-            <div class="color7 mb-2"></div>
-            <button
-              type="button"
-              class="btn btn-dark"
-              id="color7"
-              onclick="vista1()"
-            >
-              C
-            </button>
-          </div>
-          <div class="col-sm-5 col-md-5 col-lg-2 my-3">
-            <div class="color8 mb-2"></div>
-            <button
-              type="button"
-              class="btn btn-dark"
-              id="color8"
-              onclick="vista1()"
-            >
-              D
-            </button>
+          <div
+            class="row justify-content-around my-5 d-none colorHeight"
+            id="option2"
+          >
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3">
+              <div class="color5 mb-2"></div>
+              <button
+                type="button"
+                class="btn btn-dark"
+                id="color5"
+                onclick="correcto()"
+              >
+                A
+              </button>
+            </div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3">
+              <div class="color6 mb-2"></div>
+              <button
+                type="button"
+                class="btn btn-dark"
+                id="color6"
+                onclick="vista1()"
+              >
+                B
+              </button>
+            </div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3">
+              <div class="color7 mb-2"></div>
+              <button
+                type="button"
+                class="btn btn-dark"
+                id="color7"
+                onclick="vista1()"
+              >
+                C
+              </button>
+            </div>
+            <div class="col-5 col-sm-5 col-md-5 col-lg-2 my-3">
+              <div class="color8 mb-2"></div>
+              <button
+                type="button"
+                class="btn btn-dark"
+                id="color8"
+                onclick="vista1()"
+              >
+                D
+              </button>
+            </div>
           </div>
         </div>
       </article>
